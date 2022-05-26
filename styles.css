@@ -1,0 +1,231 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2CBAE7;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.chat {
+    position: fixed;
+    width: 60px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px grey;
+    top: 88vh;
+
+}
+
+/*---------navbar------------------*/
+nav {
+    
+    border-bottom: 1px solid white;
+}
+nav a {
+    display: inline-flex;
+    padding: 9px 4vw 9px 4%;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+    
+    font-family: 'Gotham Rounded', sans-serif;
+    font-weight: 350;
+    font-size: 0.80rem;
+}
+nav a:nth-last-child(-n+2) {
+    border: none;
+    padding-right: 10px;
+    float: right;
+}
+
+nav a.active {
+    color: #2CBAE7;
+    background-color: white;
+}
+
+/*-------LOGO----------*/
+.col-mb {
+    padding: 0 9% 0 9%;
+}
+
+#logo {
+    height: 130px;
+    padding-top: 43px;
+}
+
+/*----section 1------------*/
+.sec1 {
+    padding-bottom: 80px;
+    border-bottom: 1px dotted white;
+}
+
+.content {
+    padding-top: 30px;
+    font-size: 2.1rem;
+    text-align: left;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+.contact {
+    padding: 80px 40px 0 40px;
+    width: 30vw;
+}
+.contact #but {
+    box-sizing: content-box;
+    display: block;
+    color: #2CBAE7;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#but:hover {
+    background-color:rgba(1, 45, 45, 0.843);
+    transition: 0.2s ease;
+}
+.social {
+    border-top: 1px dotted white;
+    margin-top: 20px;
+    padding-top: 20px; ;
+}
+.social a {
+    padding: 12px;
+ 
+}
+.social img {
+    width: 33px;
+}
+.ad {
+    width: 50px;
+}
+
+/*--------Sec2--------------*/
+.sec2 {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    border-bottom: 1px dotted white;
+}
+.sec2 .main {
+    border-bottom: 1px dotted white;
+    padding-bottom: 50px;
+}
+.sec2 .content {
+    padding-bottom: 30px;
+}
+.credit {
+    padding-top: 50px;
+    font-size: 1rem;
+    color: white;
+}
+
+
+/*------Sec3----------*/
+.sec3 {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    border-bottom: 1px dotted white;
+}
+.project img {
+    width: 100%;
+}
+
+.sec3 .content {
+    font-size: 1.2rem;
+}
+.sec3 .title {
+    margin: 9px 0 0.5px 0;
+}
+
+.title1 {
+    padding-left: 10px;
+}
+
+
+@media (min-width:730px) {
+    .chat {
+        left: 90vw;
+    }
+    nav {
+        padding: 0 9% 0 9%;
+    }
+    nav a {
+        border-right: 1px dotted white;
+    }
+
+    .sec1 .content {
+        float: left;
+        width: 60%;
+        padding-right: 100px;
+        font-size: 3rem;
+    }
+    .ad {
+        margin-top: 20vw;
+    }
+    .contact {
+        float: right;
+    }
+    .sec2 {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .sec2 .content {
+        width: 40%;
+      
+    }
+    .cam{
+        width: 50%;
+        padding: 30px;
+        padding-top: 90px;
+    }
+    .sec3 {
+        display: inline-flex;
+        justify-content: space-between;
+
+    }
+
+    .sec3 img {
+        padding: 0 100px 0 0;
+    }
+    .sec3 .content {
+        padding-top: 100px;
+        margin-right: 100px;
+    }
+    
+}
+
+@media (max-width: 730px) {
+        .chat {
+            left: 80vw;
+        }
+        nav a {
+            display: block;
+            padding: 9px 0 9px 9%;
+            line-height: 1.5rem;
+            color: white;
+            text-align: left;
+            width: 100%;
+            float: left;
+            border-bottom: 1px dotted white;
+            font-family: 'Gotham Rounded', sans-serif;
+            font-weight: 350;
+            font-size: 0.80rem;
+        }
+        nav a:nth-last-child(-n+2) {
+            display: none;
+        }
+
+        .contact {
+            display: none;
+        }
+}
